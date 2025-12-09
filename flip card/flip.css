@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #659999, #f4791f);
+}
+.wrapper{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    padding: 5px;
+    perspective: 1000px;
+
+}
+.wrapper .card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    transition: 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.wrapper:hover > .front-card{
+    transform: rotateY(180deg);
+}
+.wrapper:hover > .back-card{
+    transform: rotateY(0deg);
+}
+.wrapper .back-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+}
+.wrapper .back-card img{
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    padding: 5px;
+    background: #659999
+}
+.wrapper .back-card p{
+    text-align: center;
+}
+
+.wrapper .back-card ul{
+    display: flex;
+    a{
+        display: block;
+        height: 40px;
+        width: 40px;
+        background: linear-gradient(45deg, #659999, #f4791f);
+        border: 2px solid transparent;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 38px;
+        margin: 0 5px;
+
+    }
+}
+
+.wrapper .back-card ul a:hover{
+    background: none;
+    color: #f4791f;
+    border-color: #f4791f;
+}
