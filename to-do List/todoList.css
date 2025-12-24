@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+AU+QLD+Guides&display=swap');
+
+* {
+	font-family: "Amatic SC", sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #A7C1A8;
+}
+
+.box #ip {
+	background-color: transparent;
+	margin-bottom: 5px;
+	border: 2px solid #819A91;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+
+	input:focus {
+		outline: none;
+	}
+
+	input:hover {
+		cursor: default;
+	}
+
+	h1 {
+		position: absolute;
+		top: 10px;
+		font-family: "Playwrite AU QLD Guides", cursive;
+		font-weight: 600;
+		font-style: normal;
+		font-size: 57px;
+		color: #3F4F44;
+	}
+
+	.addbtn {
+		background-color: #819A91;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-bottom: 10px;
+		border: 2px solid #819A91;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.addbtn:hover {
+		outline: none;
+		border: 2px solid #A7C1A8;
+	}
+
+	.deletebtn {
+		background-color: #819A91;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-bottom: 10px;
+		border: 2px solid #819A91;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: 10px;
+	}
+
+	.deletebtn:hover {
+		outline: none;
+		border: 2px solid #A7C1A8;
+	}
+
+}
